@@ -1,0 +1,24 @@
+.light-box {
+  .fslightbox-slide-number-container {
+    display: none !important;
+  }
+  .fslightbox-source-inner {
+    background: #fff;
+    padding: 10px;
+    width: 100% !important;
+    height: 100% !important;
+    img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  .fslightbox-toolbar {
+    background: unset;
+    top: 20px;
+    right: 20px;
+  }
+}
+.fslightbox-toolbar-button {
+  border-radius: 50% !important;
+  background: rgba(35, 35, 35, 0.65);
+}

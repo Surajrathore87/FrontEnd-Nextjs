@@ -1,0 +1,108 @@
+.outlined-input {
+  position: relative;
+  label {
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    color: #8c9196;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: 0.1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+  textarea ~ label {
+    top: 18%;
+  }
+  input,
+  textarea {
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid $input-border !important;
+    border-radius: 6px;
+    padding: 1rem 0.7rem;
+    color: $text-black;
+    transition: 0.1s ease-out;
+  }
+  input:focus,
+  textarea:focus {
+    border-color: $bg-blue !important;
+  }
+  input:focus + label,
+  textarea:focus + label {
+    color: $bg-blue;
+    top: 0;
+    transform: translateY(-50%) scale(0.9);
+  }
+  input:not(:placeholder-shown) + label,
+  textarea:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(0.9);
+  }
+}
+// Outlined Select
+
+.outlined-select {
+  position: relative;
+  select {
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    padding: 10px 10px 10px 10px;
+    border-radius: 6px;
+    color: $text-black;
+    border: 1px solid $input-border;
+    -webkit-appearance: none;
+    font-size: 1rem;
+    appearance: none;
+  }
+
+  /* Remove focus */
+  select:focus {
+    outline: none;
+    border: 1px solid $bg-blue;
+  }
+
+  /* Use custom arrow */
+  &::after {
+    position: absolute;
+    content: '';
+    top: 20px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    background: url('/images/down-arrow.svg') no-repeat;
+  }
+
+  label {
+    color: #8c9196;
+    background: #ffffff;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    padding: 0 5px;
+    left: 10px;
+    top: 12px;
+    transition: 0.2s ease all;
+  }
+
+  /* active state */
+  select:focus ~ label,
+  select:valid ~ label {
+    color: $text-blue;
+    top: -8px;
+    transition: 0.2s ease all;
+    font-size: 14px;
+  }
+
+  select:valid:not(focus) ~ label {
+    color: #8c9196;
+    background: #ffffff;
+  }
+  select:valid:focus ~ label {
+    color: $text-blue;
+  }
+}

@@ -1,0 +1,122 @@
+.tesitmonial-section {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  .testimonial-container {
+    max-width: 1500px;
+    padding: 0px 8rem;
+    background: url('/images/testimonial-box-dots.png') top 3.5rem left 3.5rem no-repeat !important;
+    background-size: 190px !important;
+  }
+  .comman-img-box {
+    top: 75px;
+    left: 0px;
+  }
+  .contant-box {
+    position: absolute;
+    top: -23px;
+    left: -19px;
+  }
+  .dots-img {
+    position: absolute;
+    bottom: 1px;
+    right: -24px;
+    z-index: -1;
+  }
+  .client-profile {
+    .img-box {
+      border-radius: 50%;
+      img {
+        min-height: 53px;
+        min-width: 53px;
+        max-width: 53px;
+        max-height: 53px;
+        border-radius: 50%;
+      }
+    }
+    h3 {
+      color: #000000;
+    }
+  }
+
+  .slick-dots {
+    width: max-content;
+    right: 50px;
+    top: 69%;
+    li {
+      margin: 0 0.5rem 0 0;
+      text-align: center;
+      width: 0.5rem;
+      height: 0.5rem;
+      button {
+        margin: 0;
+        padding: 0px;
+        &::before {
+          opacity: 1;
+          content: '';
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 50%;
+          background: #737071;
+        }
+      }
+      &.slick-active {
+        width: 1.5rem;
+        button {
+          &::before {
+            width: 1.5rem;
+            opacity: 1;
+            border-radius: 10px;
+            background: #ec6b6c;
+          }
+        }
+      }
+    }
+  }
+  .tesimonial-slide-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: linear-gradient(to left, $bg-light-pink 75%, transparent 25%);
+  }
+  .dobule-coat-img {
+    top: -10px;
+    right: -30px;
+  }
+}
+@media (max-width: 991px) {
+  .tesitmonial-section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    .testimonial-container {
+      padding: 0px;
+      background: unset !important;
+    }
+    .comman-img-box {
+      display: none;
+    }
+    .contant-box {
+      width: 70px;
+      left: 0px;
+    }
+    .testimonial-img-box {
+      height: 260px !important;
+      .dobule-coat-img {
+        display: none;
+      }
+    }
+    .tesimonial-slide-box {
+      padding: 30px 15px;
+      background: $bg-light-pink;
+    }
+    .slick-dots {
+      position: unset;
+      margin: 30px auto 0;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .tesitmonial-section {
+    .slick-dots {
+      margin: 0px auto;
+    }
+  }
+}

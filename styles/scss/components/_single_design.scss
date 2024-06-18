@@ -1,0 +1,300 @@
+.signle-design-section {
+  padding-bottom: 66px !important;
+  .list-items {
+    li {
+      &::before {
+        content: '\2022';
+        color: #6d7175;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+  }
+  .border-box-line {
+    background: #dddfe3;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 1px;
+  }
+  .pagination {
+    padding-top: 0px;
+  }
+  .gray-box {
+    background: #ffffff;
+    border: 1px solid #dddfe3;
+    border-color: #dddfe3;
+    border-radius: 6px;
+    hr {
+      color: #dddfe3;
+    }
+  }
+  .des-features-box {
+    background: #fef1f1;
+    border-color: #ec6b6c;
+  }
+  .blue-btn {
+    padding: 15px 82px !important;
+  }
+  .design-img-box {
+    .img-fluid {
+      min-height: 200px;
+      max-height: 200px;
+    }
+    .design-img-hover {
+      transition: 0.3s;
+      opacity: 0;
+    }
+    &:hover {
+      .design-img-hover {
+        opacity: 1;
+        background: linear-gradient(180deg, hsla(0, 0%, 100%, 0.1) 1%, rgba(0, 0, 0, 0.3));
+      }
+    }
+  }
+  .cart-slider {
+    .slick-slide {
+      height: 530px;
+      .item-img {
+        height: 530px !important;
+      }
+    }
+  }
+  .signle-design-slider {
+    .slick-next,
+    .slick-prev {
+      display: inline-block;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      z-index: 5;
+      border: 1px solid #dddfe3;
+      &::before {
+        content: unset !important;
+      }
+    }
+    .slick-next {
+      // top: 71%;
+      right: 20px;
+      background: url('/images/arrow-right.svg'), #fff !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+    }
+    .slick-prev {
+      background: url('/images/arrow-left.svg'), #fff !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      left: 20px;
+    }
+    .slick-disabled {
+      display: none !important;
+    }
+  }
+  .go-design-btn {
+    padding: 7.5px 16.3px !important;
+  }
+  .pagination {
+    padding-top: 32px !important;
+    padding-bottom: 36px !important;
+  }
+  .signle-design-left-section {
+    border-radius: 8px;
+    .inner-heading {
+      .pro-box {
+        line-height: 1 !important;
+      }
+    }
+  }
+}
+.also-lik-box {
+  h3 {
+    font-size: 32px;
+  }
+  .red-btn {
+    padding: 9px 34px !important;
+  }
+  .signle-design-slider {
+    .slick-track {
+      margin: 0 !important;
+    }
+    .slick-slide {
+      height: 200px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .slick-next {
+      right: -55px;
+    }
+    .slick-prev {
+      left: -55px;
+    }
+  }
+}
+.info-title {
+  min-width: 100px;
+}
+.info-large-title {
+  min-width: 120px;
+}
+.details-actions {
+  bottom: 1.5rem;
+}
+.slider-main-image {
+  min-height: 424px;
+  max-height: 424px;
+}
+.groups-img {
+  min-height: 465px;
+}
+.image-album-btns {
+  bottom: 2rem;
+}
+.features-column {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.slide-design-box {
+  min-height: 530px;
+  max-height: 530px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.des-gallary-img {
+  min-height: 253px;
+  max-height: 253px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.more-des-img {
+  min-height: 200px;
+  max-height: 200px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.img-view-slide {
+  img {
+    max-height: 100% !important;
+    max-width: 100% !important;
+  }
+}
+.expanded-slider {
+  z-index: 1000;
+  // transition: height 0.2s;
+  // transition: width 0.2s;
+  .slick-slide {
+    height: unset !important;
+  }
+  .expand-img {
+    margin: 15px auto !important;
+    max-height: calc(100vh - 30px) !important;
+    max-width: 100% !important;
+    // transition: height 0.2s;
+    // transition: width 0.2s;
+  }
+}
+@media (max-width: 991px) {
+  .signle-design-section {
+    padding-bottom: 30px !important;
+    .list-items {
+      li {
+        font-size: 14px !important;
+      }
+    }
+    .cart-slider {
+      .slick-slide {
+        max-height: 250px;
+        .item-img {
+          max-height: 250px !important;
+          width: 100%;
+        }
+      }
+    }
+    // .design-img-box {
+    //   width: 100%;
+    //   height: 200px;
+    // }
+    .free-download-btn {
+      padding: 10px 95px !important;
+    }
+    .pagination {
+      padding-top: 0px !important;
+      padding-bottom: 8px !important;
+    }
+    .signle-design-slider {
+      .slick-next,
+      .slick-prev {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+  .also-lik-box {
+    h3 {
+      font-size: 20px;
+    }
+    .red-btn {
+      padding: 6px 30px !important;
+    }
+    .signle-design-slider {
+      .slick-next {
+        right: 10px;
+      }
+      .slick-prev {
+        left: 10px;
+      }
+      img {
+        height: 225px !important;
+      }
+    }
+  }
+  .signle-design-slider {
+    .slick-list {
+      img {
+        height: 225px !important;
+        min-height: unset;
+        max-height: unset;
+      }
+    }
+  }
+  .slide-design-box {
+    min-height: 250px;
+    max-height: 250px;
+  }
+  .img-view-slide {
+    img {
+      max-height: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+  .home-flex-reverse {
+    flex-direction: column-reverse;
+  }
+  .home-comman-box {
+    .comman-left-img-box,
+    .comman-right-img-box {
+      margin: 0 auto;
+      img {
+        max-height: 270px;
+      }
+    }
+  }
+  .expanded-slider {
+    z-index: 1000;
+    // transition: height 0.2s;
+    // transition: width 0.2s;
+    .slick-slide {
+      height: unset !important;
+    }
+    .expand-img {
+      margin: 15px auto !important;
+      max-height: calc(100vh - 30px) !important;
+      max-width: 100% !important;
+      // transition: height 0.2s;
+      // transition: width 0.2s;
+    }
+  }
+}

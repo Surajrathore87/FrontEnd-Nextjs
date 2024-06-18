@@ -1,0 +1,51 @@
+.my-orders-section {
+  .orders-table-box{
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  .orders-table {
+    border: solid 1px $border-color;
+    border-collapse: inherit;
+    border-spacing: 0;
+    thead {
+      th {
+        background-color: #ddefef;
+        border: solid 1px $border-color;
+      }
+    }
+    tbody {
+      tr {
+        td {
+          border-color: $border-color !important;
+        }
+        &:hover {
+          td {
+            background-color: $bg-color-2;
+          }
+        }
+      }
+    }
+  }
+  .orders-table-rounded {
+    border: none;
+    thead {
+      th {
+        background-color: rgba(244, 244, 245, 0.5);
+        border: none;
+        &:first-child {
+          border-radius: 6px 0 0 6px;
+        }
+        &:last-child {
+          border-radius: 0 6px 6px 0;
+        }
+      }
+    }
+  }
+}
+.order-list-image {
+  width: 120px;
+  height: 82px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

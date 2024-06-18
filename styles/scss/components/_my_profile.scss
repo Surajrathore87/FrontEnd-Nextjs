@@ -1,0 +1,106 @@
+.my-profile-section {
+  .profile-box {
+    max-width: 700px;
+    img {
+      min-width: 100px;
+      min-height: 100px;
+      max-height: 100px;
+      max-width: 100px;
+    }
+    .upload-box {
+      width: 100px;
+    }
+  }
+}
+.profile-nav {
+  border: 1px solid #dddfe3;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 4%), 0 3px 5px rgb(0 0 0 / 6%);
+  background-color: #ffffff;
+  border-radius: 6px;
+  .nav-link {
+    transition: 0.2s all;
+    &.active {
+      background-color: rgba(244, 244, 245, 0.5);
+      color: $text-blue !important;
+    }
+    &:hover {
+      background-color: rgba(244, 244, 245, 0.5);
+    }
+  }
+  .nav-profile-image {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.profile-container {
+  min-height: 706px;
+}
+.subscription-tab {
+  min-height: 642px;
+  max-height: 642px;
+  overflow-y: auto;
+}
+.update-btn {
+  width: max-content;
+}
+.edit-profile-icon {
+  width: 25px;
+  height: 25px;
+  right: -0.3rem;
+  bottom: 0.5rem;
+}
+.select-profile-input {
+  &::-webkit-file-upload-button {
+    border: 1px solid $bg-dark-blue;
+    border-radius: 6px;
+    color: $text-blue;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #ffffff;
+  }
+}
+.cropped-image {
+  max-width: 300px !important;
+}
+.crop-modal {
+  .preview-canvas {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+  }
+}
+@media (max-width: 991px) {
+  .profile-container,
+  .subscription-tab {
+    min-height: unset;
+    .w-50 {
+      width: 100%;
+      min-width: 250px;
+    }
+  }
+  .my-profile-section {
+    .h-100 {
+      height: unset !important;
+    }
+    .profile-nav {
+      margin-bottom: 1rem !important;
+      flex-direction: unset !important;
+      .nav-item {
+        width: 50%;
+        display: inline-block;
+        .nav-link {
+          text-align: center !important;
+          border: 0 !important;
+          border-radius: 3px;
+          font-size: 14px !important;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

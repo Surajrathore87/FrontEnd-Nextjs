@@ -1,0 +1,192 @@
+.plans-section {
+  .plan-box {
+    border: 1px solid #dddfe3;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 4%), 0 3px 5px rgb(0 0 0 / 6%);
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: 0.2s all;
+    &:hover,
+    &.selected-plan {
+      border-color: $bg-dark-blue;
+      box-shadow: 0px 3px 30px rgba(49, 83, 153, 0.3);
+    }
+  }
+  .plan_bottom_box {
+    background: url('/images/plan_bottom_bg.png') center center no-repeat;
+    padding: 15px 10px;
+  }
+}
+.faq-accordion {
+  .accordion-item {
+    box-shadow: 0px 3px 5px rgb(0 0 0 / 6%);
+    border-radius: 10px;
+    button {
+      box-shadow: none;
+      font-size: 16px;
+      color: $label-color-2;
+      font-weight: 600;
+    }
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: $bg-light-blue;
+  }
+}
+.vh-60 {
+  min-height: 60vh;
+}
+.cms-text-content {
+  font-family: 'Inter', sans-serif !important;
+  * {
+    font-family: 'Inter', sans-serif !important;
+    color: $label-color-1 !important;
+    font-size: 1rem !important;
+    text-decoration: none !important;
+    line-height: 30px;
+  }
+  h1 {
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+    line-height: 45px;
+    color: #202223 !important;
+    font-family: 'Merriweather', serif !important;
+    font-weight: 700 !important;
+    * {
+      font-size: 2rem !important;
+      font-weight: 600 !important;
+      line-height: 45px;
+      font-family: 'Merriweather', serif !important;
+      color: #202223 !important;
+    }
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #202223 !important;
+    font-family: 'Merriweather', serif !important;
+    font-weight: 700 !important;
+    * {
+      font-size: 1.25rem !important;
+      font-weight: 600 !important;
+      color: #202223 !important;
+      font-family: 'Merriweather', serif !important;
+    }
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.1rem !important;
+    * {
+      font-size: 1rem !important;
+    }
+  }
+  a {
+    color: $text-blue !important;
+    font-weight: 500 !important;
+    * {
+      font-weight: 500 !important;
+      color: $text-blue !important;
+    }
+  }
+  ul {
+    list-style: none !important;
+    padding: 0 !important;
+    list-style-type: none !important;
+    li {
+      padding-left: 25px !important;
+      position: relative !important;
+      margin-bottom: 4px;
+      list-style-type: none !important;
+      &::before {
+        display: block;
+        min-width: 8px;
+        min-height: 8px;
+        border-radius: 50%;
+        content: '';
+        background-color: #ec6b6c;
+        position: absolute;
+        left: 2px;
+        top: 10px;
+      }
+    }
+  }
+  p {
+    margin-bottom: 8px !important;
+  }
+}
+.contact-form {
+  background-color: #fff;
+  border: 1px solid #dddfe3 !important;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 4%), 0px 3px 5px rgb(0 0 0 / 6%);
+  border-radius: 6px;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input,
+  select {
+    max-height: 45px !important;
+  }
+  .contact-submit {
+    min-width: 168px;
+    &:disabled {
+      cursor: not-allowed !important;
+    }
+  }
+}
+.payment-pending {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  cursor: default;
+  .processing-box {
+    max-width: 500px;
+  }
+}
+.withdrawal-box {
+  max-width: 600px;
+  border: 1px solid #dddfe3 !important;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 4%), 0px 3px 5px rgb(0 0 0 / 6%);
+  input {
+    width: 300px;
+    height: 35px;
+    &:focus {
+      border-color: $bg-blue;
+    }
+  }
+  .mw-100 {
+    min-width: 100px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+.contact-icon {
+  width: 55px;
+  height: 55px;
+}
+@media (max-width: 991px) {
+  .withdrawal-box {
+    input {
+      width: 100%;
+      height: 35px;
+      &:focus {
+        border-color: $bg-blue;
+      }
+    }
+    .mw-100 {
+      min-width: 100px;
+    }
+  }
+}

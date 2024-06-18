@@ -1,0 +1,78 @@
+.wishlist-names {
+  border: 2px solid #ffffff;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.06);
+  &:hover {
+    // box-shadow: 1px 1px 8px rgb(0 0 0 / 8%);
+    color: #ec6b6c !important;
+    border: 2px solid #ec6b6c;
+    box-shadow: 0px 3px 5px rgba(236, 107, 108, 0.21);
+    .folder-red {
+      display: block !important;
+    }
+    .folder-blue {
+      display: none !important;
+    }
+  }
+}
+.add-folder {
+  button,
+  input {
+    height: 43px;
+    padding-right: 95px;
+  }
+  button {
+    border-radius: 0 4px 4px 0;
+  }
+}
+.favourite-folder {
+  img {
+    max-height: 200px;
+    min-height: 200px;
+  }
+}
+.fav-dropdown {
+  button {
+    box-shadow: none !important;
+    color: $label-color-1 !important;
+    outline: none !important;
+    padding: 0;
+    &::after {
+      content: none;
+    }
+  }
+  .dropdown-menu {
+    border: 0;
+    padding-top: 0.75rem;
+    margin-top: 10px;
+    box-shadow: 0rem 0.3rem 1.5rem rgb(0 0 0 / 20%) !important;
+    &::before {
+      background: #fff;
+      height: 15px;
+      width: 15px;
+      content: '';
+      position: absolute;
+      right: 0.5rem;
+      top: -0.5rem;
+      border: 1px solid #fff;
+      border-bottom: 0;
+      border-left: 0;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    .dropdown-item {
+      &:active {
+        background-color: #e9ecef !important;
+      }
+    }
+  }
+}
+.user-favorite-folder {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

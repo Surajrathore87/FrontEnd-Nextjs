@@ -1,0 +1,20 @@
+.collage-section {
+  background: linear-gradient(to top, #fff 43%, $bg-dark-blue 43%);
+  background-size: 100% !important;
+  .collage-img-box {
+    border-radius: 33px;
+    box-shadow: 0px 4px 40px rgba(0, 160, 210, 0.3);
+    max-width: 100%;
+    img {
+      border-radius: 10px;
+    }
+  }
+  &.dot-img-left {
+    .comman-img-box {
+      bottom: 40px;
+    }
+  }
+  .benefits-title {
+    color: #315399 !important;
+  }
+}

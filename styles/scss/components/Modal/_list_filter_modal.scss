@@ -1,0 +1,207 @@
+.list-filter-modal {
+  .modal-dialog {
+    max-width: 624px !important;
+    .modal-content {
+      min-height: 690px;
+      border-radius: 19px;
+      .modal-header {
+        background: #f4f4f5;
+        border-radius: 19px 19px 0 0;
+        padding: 12px 32px !important;
+        border-bottom-color: #dddfe3 !important;
+        span {
+          font-weight: 600;
+          font-size: 28px;
+          color: $text-black;
+        }
+      }
+      .modal-body {
+        padding: 20px 30px !important;
+        border-radius: 0 0 19px 19px;
+        .list-filter-tabbing {
+          .nav-pills {
+            border-bottom: 1px solid #d9d9d9;
+            .nav-link {
+              font-size: 15px;
+              font-weight: 500;
+              border-radius: 0px !important;
+              border-bottom: 2px solid transparent;
+              cursor: pointer;
+              color: #6d7175;
+              &.active {
+                border-bottom: 2px solid $text-red;
+                color: $text-red;
+                background: #fff !important;
+              }
+            }
+          }
+          .tab-content {
+            .tab-pane {
+              .filter-size-section {
+                min-height: 480px;
+                .accordion {
+                  .accordion-item {
+                    border: unset !important;
+                    .accordion-header {
+                      border: 0px !important;
+                      border-bottom: 1px solid #d9d9d9 !important;
+                      .accordion-button {
+                        box-shadow: unset !important;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #202223;
+                        background: transparent;
+                        padding: 10px 16px !important;
+                        &::after {
+                          width: 0.75rem !important;
+                          height: 0.75rem !important;
+                          background-size: 0.75rem !important;
+                        }
+                      }
+                      &.label-color-1 {
+                        .accordion-button {
+                          color: $label-color-1;
+                        }
+                      }
+                    }
+                    .accordion-collapse {
+                      .accordion-body {
+                        background: rgba(244, 244, 245, 0.5);
+                        border-bottom: 1px solid #d9d9d9;
+                        .accordion-data {
+                          input {
+                            border: 0.75px solid #dddfe3;
+                            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.04);
+                            border-radius: 6px;
+                            color: #8c9196 !important;
+                            outline: unset !important;
+                          }
+                        }
+                      }
+                      .filter-group-check {
+                        color: #6d7175;
+                        position: relative;
+                      }
+                      .filter-group-check input {
+                        padding: 0;
+                        height: initial;
+                        width: initial;
+                        margin-bottom: 0;
+                        opacity: 0;
+                        // display: none;
+                        cursor: pointer;
+                        width: 100%;
+                        position: absolute;
+                        left: 0;
+                        z-index: 9;
+                        height: 100%;
+                      }
+                      .filter-group-check label::after {
+                        content: '';
+                        -webkit-appearance: none;
+                        background-color: transparent;
+                        // border: 1px solid #ec6b6c;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 4px;
+                        display: inline-block;
+                        position: relative;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        margin-right: 10px;
+                        margin-bottom: 3px;
+                        left: 88%;
+                      }
+                      .filter-group-check input:checked + label::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 2px;
+                        left: 94%;
+                        width: 8px;
+                        height: 15px;
+                        border: solid #ec6b6c;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .reset-btn {
+          padding: 10px 46px;
+          background: #ffffff;
+          border: 1px solid #dddfe3;
+          border-radius: 6px;
+          color: #6d7175;
+          transition: 0.3s;
+          &:hover {
+            border-color: $bg-dark-blue;
+            background: $bg-dark-blue;
+            color: #fff;
+          }
+        }
+        .apply-btn {
+          padding: 10px 28px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .list-filter-modal {
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          padding: 8px 11px !important;
+          .cross-icon {
+            width: 30px;
+          }
+          span {
+            font-size: 25px;
+          }
+        }
+        .modal-body {
+          padding: 15px 9px !important;
+          .reset-btn {
+            padding: 10px 39px;
+          }
+          .apply-btn {
+            padding: 10px 15px;
+          }
+          .list-filter-tabbing {
+            .nav-pills {
+              border-bottom: 1px solid #d9d9d9;
+              .nav-link {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+        .tab-content {
+          .tab-pane {
+            .filter-size-section {
+              .accordion {
+                .accordion-item {
+                  .accordion-collapse {
+                    .accordion-body {
+                      .accordion-data {
+                        input {
+                          width: 100%;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
